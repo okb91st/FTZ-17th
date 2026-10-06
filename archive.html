@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FTZ-17th · Archive</title>
+
+  <meta
+    name="description"
+    content="FTZ-17th project archive."
+  >
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/archive.css">
+
+  <script src="js/common.js" defer></script>
+  <script src="js/archive.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a class="site-brand" href="index.html">
+        <span class="brand-name">FTZ-17th</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+
+        <a class="nav-link" href="index.html">
+          HOME
+        </a>
+
+        <a class="nav-link" href="projects.html">
+          PROJECTS
+        </a>
+
+        <a class="nav-link active" href="archive.html">
+          ARCHIVE
+        </a>
+
+        <a class="nav-link" href="community.html">
+          COMMUNITY
+        </a>
+
+        <a
+          class="nav-link external-link"
+          href="https://space.bilibili.com/3546640220687008"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          BILIBILI ↗
+        </a>
+
+      </nav>
+
+      <div class="header-tools">
+
+        <a
+          class="language-switch"
+          href="en/archive.html"
+          lang="en"
+        >
+          中文 / EN
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- ARCHIVE HERO -->
+
+    <section class="archive-hero">
+
+      <div class="archive-hero-inner">
+
+        <p class="archive-kicker">
+          FTZ-17TH PROJECT DATABASE
+        </p>
+
+        <h1>
+          ARCHIVE
+        </h1>
+
+        <p class="archive-hero-cn">
+          作品档案
+        </p>
+
+        <p class="archive-description">
+          浏览 FTZ-17th 已归档的模型、技术图纸与设计项目。
+          你可以按照军种、时期、国家、生产类型或系列标签进行筛选。
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SEARCH AND FILTER -->
+
+    <section class="archive-controls">
+
+      <div class="section-inner">
+
+        <div class="archive-search">
+
+          <label for="archive-search-input">
+            SEARCH / 搜索
+          </label>
+
+          <input
+            id="archive-search-input"
+            type="search"
+            placeholder="Search archive..."
+            autocomplete="off"
+          >
+
+        </div>
+
+
+        <div class="filter-grid">
+
+
+          <div class="filter-group">
+
+            <span class="filter-title">
+              PRODUCTION
+            </span>
+
+            <div class="filter-buttons">
+
+              <button
+                class="filter-button active"
+                type="button"
+                data-filter="production"
+                data-value="all"
+              >
+                ALL
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="production"
+                data-value="custom"
+              >
+                CUSTOM
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="production"
+                data-value="standard"
+              >
+                STANDARD
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <div class="filter-group">
+
+            <span class="filter-title">
+              BRANCH
+            </span>
+
+            <div class="filter-buttons">
+
+              <button
+                class="filter-button active"
+                type="button"
+                data-filter="branch"
+                data-value="all"
+              >
+                ALL
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="branch"
+                data-value="ground"
+              >
+                GROUND
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="branch"
+                data-value="air"
+              >
+                AIR
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="branch"
+                data-value="naval"
+              >
+                NAVAL
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <div class="filter-group">
+
+            <span class="filter-title">
+              PERIOD
+            </span>
+
+            <div class="filter-buttons">
+
+              <button
+                class="filter-button active"
+                type="button"
+                data-filter="period"
+                data-value="all"
+              >
+                ALL
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="period"
+                data-value="wwii"
+              >
+                WWII
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="period"
+                data-value="cold-war"
+              >
+                COLD WAR
+              </button>
+
+              <button
+                class="filter-button"
+                type="button"
+                data-filter="period"
+                data-value="modern"
+              >
+                MODERN
+              </button>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="archive-select-row">
+
+
+          <label class="archive-select">
+
+            <span>
+              COUNTRY / 国家
+            </span>
+
+            <select id="country-filter">
+
+              <option value="all">
+                All Countries
+              </option>
+
+              <option value="soviet-union">
+                Soviet Union
+              </option>
+
+              <option value="east-germany">
+                East Germany
+              </option>
+
+              <option value="west-germany">
+                West Germany
+              </option>
+
+              <option value="germany">
+                Germany
+              </option>
+
+              <option value="czechoslovakia">
+                Czechoslovakia
+              </option>
+
+            </select>
+
+          </label>
+
+
+          <label class="archive-select">
+
+            <span>
+              VEHICLE TYPE / 类型
+            </span>
+
+            <select id="type-filter">
+
+              <option value="all">
+                All Types
+              </option>
+
+              <option value="main-battle-tank">
+                Main Battle Tank
+              </option>
+
+              <option value="armored-vehicle">
+                Armored Vehicle
+              </option>
+
+              <option value="aircraft">
+                Aircraft
+              </option>
+
+              <option value="helicopter">
+                Helicopter
+              </option>
+
+              <option value="warship">
+                Warship
+              </option>
+
+            </select>
+
+          </label>
+
+
+          <button
+            class="reset-filters"
+            id="reset-filters"
+            type="button"
+          >
+            RESET FILTERS
+          </button>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TAGS -->
+
+    <section class="archive-tags-section">
+
+      <div class="section-inner">
+
+        <div class="archive-section-heading">
+
+          <div>
+
+            <p class="archive-section-index">
+              01
+            </p>
+
+            <h2>
+              SERIES & TAGS
+            </h2>
+
+          </div>
+
+          <p>
+            系列与专题标签
+          </p>
+
+        </div>
+
+
+        <div class="archive-tag-cloud">
+
+          <button
+            class="archive-tag archive-tag-button"
+            type="button"
+            data-tag="leopard-2-series"
+          >
+            Leopard 2 Series
+          </button>
+
+          <button
+            class="archive-tag archive-tag-button"
+            type="button"
+            data-tag="t-72-series"
+          >
+            T-72 Series
+          </button>
+
+          <button
+            class="archive-tag archive-tag-button"
+            type="button"
+            data-tag="east-germany"
+          >
+            East Germany
+          </button>
+
+          <button
+            class="archive-tag archive-tag-button"
+            type="button"
+            data-tag="warsaw-pact"
+          >
+            Warsaw Pact
+          </button>
+
+          <button
+            class="archive-tag archive-tag-button"
+            type="button"
+            data-tag="bundeswehr"
+          >
+            Bundeswehr
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARCHIVE ENTRIES -->
+
+    <section class="archive-results-section">
+
+      <div class="section-inner">
+
+        <div class="archive-section-heading">
+
+          <div>
+
+            <p class="archive-section-index">
+              02
+            </p>
+
+            <h2>
+              ARCHIVE ENTRIES
+            </h2>
+
+          </div>
+
+          <p id="archive-result-count">
+            Loading archive...
+          </p>
+
+        </div>
+
+
+        <div
+          class="archive-grid"
+          id="archive-grid"
+          data-source="data/archive.json"
+        >
+
+          <div class="archive-loading">
+
+            <strong>
+              FTZ-17th Archive
+            </strong>
+
+            <p>
+              Archive database is loading.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="archive-empty"
+          id="archive-empty"
+          hidden
+        >
+
+          <strong>
+            NO MATCHING ENTRIES
+          </strong>
+
+          <p>
+            当前筛选条件下没有找到档案条目。
+          </p>
+
+          <button
+            class="reset-filters"
+            type="button"
+            data-reset-archive
+          >
+            RESET FILTERS
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-main">
+
+        <strong>
+          FTZ-17th · Archive
+        </strong>
+
+        <span>
+          Model Design · Technical Drawings · Project Archive
+        </span>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 FTZ-17th
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
