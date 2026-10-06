@@ -1,0 +1,47 @@
+[
+  {
+    "id": "t-64-tutorial",
+    "name": "T-64 Tutorial",
+    "nameZh": "T-64 模型教程",
+    "status": "in-progress",
+    "statusLabel": "IN PROGRESS",
+    "branch": "ground",
+    "branchLabel": "Ground",
+    "category": "tutorial",
+    "categoryLabel": "Tutorial",
+    "description": "T-64 模型制作与相关教程项目。",
+    "image": "",
+    "archiveId": "",
+    "bilibili": ""
+  },
+  {
+    "id": "t-72m1-command",
+    "name": "T-72M1 Command Variant",
+    "nameZh": "T-72M1 指挥型",
+    "status": "planned",
+    "statusLabel": "PLANNED",
+    "branch": "ground",
+    "branchLabel": "Ground",
+    "category": "custom",
+    "categoryLabel": "Custom",
+    "description": "T-72M1 指挥型号设计项目。",
+    "image": "",
+    "archiveId": "",
+    "bilibili": ""
+  },
+  {
+    "id": "type-205-missile-boat",
+    "name": "Type 205 Missile Boat",
+    "nameZh": "205 型导弹艇",
+    "status": "planned",
+    "statusLabel": "PLANNED",
+    "branch": "naval",
+    "branchLabel": "Naval",
+    "category": "standard",
+    "categoryLabel": "Standard Production",
+    "description": "民主德国 205 型导弹艇模型设计项目。",
+    "image": "",
+    "archiveId": "",
+    "bilibili": ""
+  }
+]
