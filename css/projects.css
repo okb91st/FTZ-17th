@@ -566,3 +566,31 @@
   }
 
 }
+
+/* ---------------------------------------------------------
+   CLICKABLE PROJECT CARDS
+   --------------------------------------------------------- */
+
+.project-entry-clickable {
+  cursor: pointer;
+}
+
+.project-entry-clickable:hover {
+  border-color: var(--color-red);
+
+  box-shadow:
+    0 14px 30px rgba(56, 54, 47, 0.14);
+}
+
+.project-entry-clickable h3 {
+  transition: color 0.18s ease;
+}
+
+.project-entry-clickable:hover h3 {
+  color: var(--color-red);
+}
+
+.project-entry-clickable:focus-visible {
+  outline: 3px solid rgba(166, 28, 19, 0.28);
+  outline-offset: 4px;
+}
