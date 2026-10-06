@@ -139,8 +139,39 @@ function createProjectCard(project) {
   article.className = "project-entry";
   article.dataset.status = project.status;
 
+
+  /* -------------------------------------------------------
+     DETAIL PAGE SUPPORT
+     ------------------------------------------------------- */
+
+  if (project.page) {
+    article.classList.add(
+      "project-entry-clickable"
+    );
+
+    article.dataset.page =
+      project.page;
+
+    article.setAttribute(
+      "role",
+      "link"
+    );
+
+    article.setAttribute(
+      "tabindex",
+      "0"
+    );
+
+    article.setAttribute(
+      "aria-label",
+      `Open ${project.name} project page`
+    );
+  }
+
+
   const statusClass =
     getStatusClass(project.status);
+
 
   article.innerHTML = `
     <div class="project-entry-image">
@@ -186,6 +217,70 @@ function createProjectCard(project) {
     </div>
   `;
 
+
+  /* -------------------------------------------------------
+     WHOLE CARD CLICK
+     ------------------------------------------------------- */
+
+  if (project.page) {
+
+    const openProjectPage = () => {
+      window.location.href =
+        project.page;
+    };
+
+
+    article.addEventListener(
+      "click",
+      event => {
+
+        /*
+          If future ARCHIVE or VIDEO links are clicked,
+          let those links work normally instead of
+          opening the project detail page.
+        */
+
+        if (
+          event.target.closest(
+            "a, button"
+          )
+        ) {
+          return;
+        }
+
+        openProjectPage();
+      }
+    );
+
+
+    article.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key !== "Enter" &&
+          event.key !== " "
+        ) {
+          return;
+        }
+
+        if (
+          event.target.closest(
+            "a, button"
+          )
+        ) {
+          return;
+        }
+
+        event.preventDefault();
+
+        openProjectPage();
+      }
+    );
+
+  }
+
+
   return article;
 }
 
@@ -219,10 +314,15 @@ function renderProjects() {
   if (!visibleProjects.length) {
     projectsGrid.innerHTML = `
       <div class="projects-empty-state">
-        <strong>NO PROJECTS FOUND</strong>
+
+        <strong>
+          NO PROJECTS FOUND
+        </strong>
+
         <p>
           当前分类中暂时没有项目。
         </p>
+
       </div>
     `;
   } else {
@@ -280,11 +380,13 @@ function initializeProjectEvents() {
     button.addEventListener(
       "click",
       () => {
+
         projectState.status =
           button.dataset.projectStatus;
 
         syncProjectFilters();
         renderProjects();
+
       }
     );
   });
@@ -305,6 +407,7 @@ async function loadProjects() {
     "data/projects.json";
 
   try {
+
     const response =
       await fetch(source);
 
@@ -328,6 +431,7 @@ async function loadProjects() {
     renderProjects();
 
   } catch (error) {
+
     console.error(
       "Failed to load FTZ-17th project data:",
       error
@@ -335,10 +439,15 @@ async function loadProjects() {
 
     projectsGrid.innerHTML = `
       <div class="projects-empty-state">
-        <strong>PROJECT DATA UNAVAILABLE</strong>
+
+        <strong>
+          PROJECT DATA UNAVAILABLE
+        </strong>
+
         <p>
           项目数据暂时无法加载。
         </p>
+
       </div>
     `;
 
