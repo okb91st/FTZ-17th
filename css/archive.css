@@ -818,3 +818,305 @@
   }
 
 }
+
+/* =========================
+   ARCHIVE TYPE
+   ========================= */
+
+.archive-type-section {
+  padding:
+    64px 0;
+
+  background:
+    rgba(255, 255, 255, 0.12);
+
+  border-bottom:
+    1px solid var(--color-line);
+}
+
+.archive-type-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+.archive-type-card {
+  position: relative;
+
+  min-height: 190px;
+
+  padding:
+    30px;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  color:
+    var(--color-text);
+
+  background:
+    var(--color-surface);
+
+  border:
+    1px solid var(--color-line);
+
+  box-shadow:
+    var(--shadow-small);
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+}
+
+.archive-type-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 5px;
+  height: 100%;
+
+  background:
+    var(--color-red);
+}
+
+.archive-type-card:hover {
+  transform:
+    translateY(-5px);
+
+  border-color:
+    rgba(166, 28, 19, 0.4);
+
+  box-shadow:
+    var(--shadow-medium);
+}
+
+.archive-type-card.active {
+  background:
+    rgba(166, 28, 19, 0.08);
+
+  border-color:
+    var(--color-red);
+}
+
+.archive-type-code {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color:
+    var(--color-gold-dark);
+
+  font-size: 0.72rem;
+  font-weight: 850;
+
+  letter-spacing: 0.12em;
+}
+
+.archive-type-card strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color:
+    var(--color-red-dark);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 1.75rem;
+}
+
+.archive-type-card > span:last-child {
+  color:
+    var(--color-text-soft);
+
+  font-size: 0.86rem;
+}
+
+
+/* =========================
+   DIRECTORY SYSTEM
+   ========================= */
+
+.archive-directory-section {
+  padding:
+    68px 0;
+
+  background:
+    rgba(197, 144, 45, 0.045);
+
+  border-bottom:
+    1px solid var(--color-line);
+}
+
+.directory-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.directory-card {
+  overflow: hidden;
+
+  padding: 0 0 19px;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  color:
+    var(--color-text);
+
+  background:
+    var(--color-surface);
+
+  border:
+    1px solid var(--color-line);
+
+  box-shadow:
+    var(--shadow-small);
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.directory-card:hover {
+  transform:
+    translateY(-5px);
+
+  border-color:
+    rgba(166, 28, 19, 0.4);
+
+  box-shadow:
+    var(--shadow-medium);
+}
+
+.directory-card.active {
+  border-color:
+    var(--color-red);
+
+  box-shadow:
+    0 0 0 2px rgba(166, 28, 19, 0.08);
+}
+
+.directory-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  aspect-ratio:
+    16 / 9;
+
+  margin-bottom: 18px;
+
+  color:
+    rgba(118, 18, 13, 0.48);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(197, 144, 45, 0.16),
+      rgba(166, 28, 19, 0.07)
+    );
+
+  border-bottom:
+    1px solid var(--color-line);
+}
+
+.directory-icon span {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(1.3rem, 3vw, 2.3rem);
+
+  font-weight: 900;
+
+  letter-spacing: -0.03em;
+}
+
+.directory-card strong,
+.directory-card > span {
+  display: block;
+
+  margin-inline:
+    18px;
+}
+
+.directory-card strong {
+  color:
+    var(--color-red-dark);
+
+  font-size: 1rem;
+}
+
+.directory-card > span {
+  margin-top: 4px;
+
+  color:
+    var(--color-text-soft);
+
+  font-size: 0.74rem;
+}
+
+
+@media (max-width: 900px) {
+
+  .archive-type-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .directory-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .archive-type-card {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .directory-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .directory-card {
+    padding-bottom: 15px;
+  }
+
+  .directory-card strong,
+  .directory-card > span {
+    margin-inline:
+      13px;
+  }
+
+}
