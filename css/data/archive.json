@@ -1,0 +1,75 @@
+[
+  {
+    "id": "leopard-2a4",
+    "name": "Leopard 2A4",
+    "country": "west-germany",
+    "countryLabel": "West Germany",
+    "countryZh": "联邦德国",
+    "period": "cold-war",
+    "branch": "ground",
+    "type": "main-battle-tank",
+    "production": "custom",
+    "image": "",
+    "description": "Leopard 2 系列模型设计与技术图纸档案。",
+    "tags": [
+      {
+        "id": "leopard-2-series",
+        "label": "Leopard 2 Series"
+      },
+      {
+        "id": "bundeswehr",
+        "label": "West Germany · Bundeswehr"
+      }
+    ]
+  },
+  {
+    "id": "t-72m1-command",
+    "name": "T-72M1 Command Variant",
+    "country": "east-germany",
+    "countryLabel": "East Germany",
+    "countryZh": "民主德国",
+    "period": "cold-war",
+    "branch": "ground",
+    "type": "main-battle-tank",
+    "production": "custom",
+    "image": "",
+    "description": "T-72M1 指挥型号模型设计项目档案。",
+    "tags": [
+      {
+        "id": "t-72-series",
+        "label": "T-72 Series"
+      },
+      {
+        "id": "east-germany",
+        "label": "East Germany · NVA"
+      },
+      {
+        "id": "warsaw-pact",
+        "label": "Warsaw Pact"
+      }
+    ]
+  },
+  {
+    "id": "type-205-missile-boat",
+    "name": "Type 205 Missile Boat",
+    "country": "east-germany",
+    "countryLabel": "East Germany",
+    "countryZh": "民主德国",
+    "period": "cold-war",
+    "branch": "naval",
+    "type": "warship",
+    "production": "standard",
+    "image": "",
+    "description": "民主德国 205 型导弹艇模型与设计资料档案。",
+    "tags": [
+      {
+        "id": "east-germany",
+        "label": "East Germany · Volksmarine"
+      },
+      {
+        "id": "warsaw-pact",
+        "label": "Warsaw Pact"
+      }
+    ]
+  }
+]
