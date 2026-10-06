@@ -15,20 +15,20 @@
     "bilibili": ""
   },
   {
-    "id": "t-72m1-command",
-    "name": "T-72M1 Command Variant",
-    "nameZh": "T-72M1 指挥型",
-    "status": "planned",
-    "statusLabel": "PLANNED",
-    "branch": "ground",
-    "branchLabel": "Ground",
-    "category": "custom",
-    "categoryLabel": "Custom",
-    "description": "T-72M1 指挥型号设计项目。",
-    "image": "",
-    "archiveId": "",
-    "bilibili": ""
-  },
+  "id": "t-72m1k",
+  "name": "T-72M1K",
+  "nameZh": "T-72M1K 指挥坦克",
+  "status": "planned",
+  "statusLabel": "PLANNED",
+  "branch": "ground",
+  "branchLabel": "Ground",
+  "category": "custom",
+  "categoryLabel": "Custom",
+  "description": "T-72M1K 指挥坦克模型设计项目。",
+  "image": "",
+  "archiveId": "",
+  "bilibili": ""
+}
   {
     "id": "type-205-missile-boat",
     "name": "Type 205 Missile Boat",
