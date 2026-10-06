@@ -50,6 +50,11 @@ const tagButtons =
 const secondaryResetButtons =
   document.querySelectorAll("[data-reset-archive]");
 
+const quickFilterButtons =
+  document.querySelectorAll("[data-set-filter]");
+
+const quickTagButtons =
+  document.querySelectorAll("[data-set-tag]");
 
 /* =========================
    LABELS
@@ -721,6 +726,32 @@ function syncControls() {
         archiveState.tag
     );
   });
+
+   quickFilterButtons.forEach(
+  button => {
+    const field =
+      button.dataset.setFilter;
+
+    const value =
+      button.dataset.value;
+
+    button.classList.toggle(
+      "active",
+      archiveState[field] === value
+    );
+  }
+);
+
+
+quickTagButtons.forEach(
+  button => {
+    button.classList.toggle(
+      "active",
+      archiveState.tag ===
+        button.dataset.setTag
+    );
+  }
+);
 }
 
 
@@ -847,6 +878,54 @@ function initializeEvents() {
     }
   );
 
+
+   quickFilterButtons.forEach(
+  button => {
+    button.addEventListener(
+      "click",
+      () => {
+        const field =
+          button.dataset.setFilter;
+
+        const value =
+          button.dataset.value;
+
+        if (!field || !value) {
+          return;
+        }
+
+        archiveState[field] =
+          archiveState[field] === value
+            ? "all"
+            : value;
+
+        syncControls();
+        applyArchiveFilters();
+      }
+    );
+  }
+);
+
+
+quickTagButtons.forEach(
+  button => {
+    button.addEventListener(
+      "click",
+      () => {
+        const tag =
+          button.dataset.setTag;
+
+        archiveState.tag =
+          archiveState.tag === tag
+            ? null
+            : tag;
+
+        syncControls();
+        applyArchiveFilters();
+      }
+    );
+  }
+);
 
   /* Reset */
 
