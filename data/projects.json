@@ -11,24 +11,26 @@
     "categoryLabel": "Tutorial",
     "description": "T-64 模型制作与相关教程项目。",
     "image": "",
+    "page": "projects/t-64.html",
     "archiveId": "",
     "bilibili": ""
   },
   {
-  "id": "t-72m1k",
-  "name": "T-72M1K",
-  "nameZh": "T-72M1K 指挥坦克",
-  "status": "planned",
-  "statusLabel": "PLANNED",
-  "branch": "ground",
-  "branchLabel": "Ground",
-  "category": "custom",
-  "categoryLabel": "Custom",
-  "description": "T-72M1K 指挥坦克模型设计项目。",
-  "image": "",
-  "archiveId": "",
-  "bilibili": ""
-},
+    "id": "t-72m1k",
+    "name": "T-72M1K",
+    "nameZh": "T-72M1K 指挥坦克",
+    "status": "planned",
+    "statusLabel": "PLANNED",
+    "branch": "ground",
+    "branchLabel": "Ground",
+    "category": "custom",
+    "categoryLabel": "Custom",
+    "description": "T-72M1K 指挥坦克模型设计项目。",
+    "image": "",
+    "page": "",
+    "archiveId": "",
+    "bilibili": ""
+  },
   {
     "id": "type-205-missile-boat",
     "name": "Type 205 Missile Boat",
@@ -41,6 +43,7 @@
     "categoryLabel": "Standard Production",
     "description": "民主德国 205 型导弹艇模型设计项目。",
     "image": "",
+    "page": "",
     "archiveId": "",
     "bilibili": ""
   }
