@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FTZ-17th · Projects</title>
+
+  <meta
+    name="description"
+    content="Current and planned projects of FTZ-17th."
+  >
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/projects.css">
+
+  <script src="js/common.js" defer></script>
+  <script src="js/projects.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a class="site-brand" href="index.html">
+        <span class="brand-name">FTZ-17th</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+
+        <a class="nav-link" href="index.html">
+          HOME
+        </a>
+
+        <a class="nav-link active" href="projects.html">
+          PROJECTS
+        </a>
+
+        <a class="nav-link" href="archive.html">
+          ARCHIVE
+        </a>
+
+        <a class="nav-link" href="community.html">
+          COMMUNITY
+        </a>
+
+        <a
+          class="nav-link external-link"
+          href="https://space.bilibili.com/3546640220687008"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          BILIBILI ↗
+        </a>
+
+      </nav>
+
+      <div class="header-tools">
+
+        <a
+          class="language-switch"
+          href="en/projects.html"
+          lang="en"
+        >
+          中文 / EN
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <section class="projects-hero">
+
+      <div class="projects-hero-inner">
+
+        <p class="projects-kicker">
+          FTZ-17TH DEVELOPMENT WORKS
+        </p>
+
+        <h1>
+          PROJECTS
+        </h1>
+
+        <p class="projects-hero-cn">
+          项目
+        </p>
+
+        <p class="projects-description">
+          查看 FTZ-17th 当前正在制作、计划中的模型设计、
+          技术图纸与相关内容。
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="projects-controls">
+
+      <div class="section-inner">
+
+        <div class="projects-status-filter">
+
+          <button
+            class="project-filter active"
+            type="button"
+            data-project-status="all"
+          >
+            ALL
+          </button>
+
+          <button
+            class="project-filter"
+            type="button"
+            data-project-status="in-progress"
+          >
+            IN PROGRESS
+          </button>
+
+          <button
+            class="project-filter"
+            type="button"
+            data-project-status="planned"
+          >
+            PLANNED
+          </button>
+
+          <button
+            class="project-filter"
+            type="button"
+            data-project-status="released"
+          >
+            RELEASED
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="projects-main">
+
+      <div class="section-inner">
+
+        <div class="projects-section-heading">
+
+          <div>
+
+            <p class="projects-section-index">
+              01
+            </p>
+
+            <h2>
+              CURRENT & PLANNED
+            </h2>
+
+          </div>
+
+          <p id="project-result-count">
+            PROJECTS
+          </p>
+
+        </div>
+
+
+        <div
+          class="projects-grid"
+          id="projects-grid"
+          data-source="data/projects.json"
+        >
+
+          <article
+            class="project-entry"
+            data-status="in-progress"
+          >
+
+            <div class="project-entry-image">
+
+              <div class="project-image-placeholder">
+                T-64
+              </div>
+
+            </div>
+
+            <div class="project-entry-body">
+
+              <div class="project-entry-top">
+
+                <span class="project-status status-progress">
+                  IN PROGRESS
+                </span>
+
+              </div>
+
+              <h3>
+                T-64 Tutorial
+              </h3>
+
+              <p class="project-entry-description">
+                T-64 模型制作与相关教程项目。
+              </p>
+
+              <div class="project-entry-meta">
+
+                <span>
+                  Ground
+                </span>
+
+                <span>
+                  Tutorial
+                </span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="project-entry"
+            data-status="planned"
+          >
+
+            <div class="project-entry-image">
+
+              <div class="project-image-placeholder">
+                T-72
+              </div>
+
+            </div>
+
+            <div class="project-entry-body">
+
+              <div class="project-entry-top">
+
+                <span class="project-status status-planned">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                T-72M1 Command Variant
+              </h3>
+
+              <p class="project-entry-description">
+                T-72M1 指挥型号设计项目。
+              </p>
+
+              <div class="project-entry-meta">
+
+                <span>
+                  Ground
+                </span>
+
+                <span>
+                  Custom
+                </span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article
+            class="project-entry"
+            data-status="planned"
+          >
+
+            <div class="project-entry-image">
+
+              <div class="project-image-placeholder">
+                205
+              </div>
+
+            </div>
+
+            <div class="project-entry-body">
+
+              <div class="project-entry-top">
+
+                <span class="project-status status-planned">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Type 205 Missile Boat
+              </h3>
+
+              <p class="project-entry-description">
+                民主德国 205 型导弹艇模型设计项目。
+              </p>
+
+              <div class="project-entry-meta">
+
+                <span>
+                  Naval
+                </span>
+
+                <span>
+                  Standard Production
+                </span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="projects-note">
+
+      <div class="section-inner">
+
+        <div class="projects-note-box">
+
+          <p class="projects-note-label">
+            PROJECT WORKFLOW
+          </p>
+
+          <h2>
+            From Project to Archive
+          </h2>
+
+          <p>
+            项目完成并正式发布后，将进入 FTZ-17th Archive 进行长期归档。
+            发布相关的视频与总结也会同步出现在首页 News 中。
+          </p>
+
+          <a
+            class="button button-secondary"
+            href="archive.html"
+          >
+            BROWSE ARCHIVE
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-main">
+
+        <strong>
+          FTZ-17th · Projects
+        </strong>
+
+        <span>
+          Current Development · Planned Work · Releases
+        </span>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 FTZ-17th
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
