@@ -16,6 +16,22 @@
     "bilibili": ""
   },
   {
+    "id": "t-55a",
+    "name": "T-55A",
+    "nameZh": "T-55A 主战坦克",
+    "status": "in-progress",
+    "statusLabel": "IN PROGRESS",
+    "branch": "ground",
+    "branchLabel": "Ground",
+    "category": "standard",
+    "categoryLabel": "Standard Production",
+    "description": "T-55A 主战坦克模型设计项目。",
+    "image": "",
+    "page": "projects/t-55a.html",
+    "archiveId": "",
+    "bilibili": ""
+  },
+  {
     "id": "t-72m1k",
     "name": "T-72M1K",
     "nameZh": "T-72M1K 指挥坦克",
